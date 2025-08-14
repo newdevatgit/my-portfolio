@@ -2,12 +2,14 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import Navbar from './components/Navbar'
+import Hero from './components/Hero'
 import './App.css'
 
 export default function App() {
   return (
     <>
       <Navbar />
+      <Hero />
       <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
         
         <main className="mt-8 text-center">

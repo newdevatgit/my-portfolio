@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white pt-20"
+      className="min-h-screen flex items-center justify-center  bg-gray-900  text-white pt-20"
     >
       <div className="max-h-6xl mx-auto px-4 flex flex-col md:flex-row items-center gap-10">
         {/* Left Content */}

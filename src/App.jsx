@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
+import About from './components/About'
 import './App.css'
 
 export default function App() {
@@ -10,6 +11,7 @@ export default function App() {
     <>
       <Navbar />
       <Hero />
+      <About />
       <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
         
         <main className="mt-8 text-center">

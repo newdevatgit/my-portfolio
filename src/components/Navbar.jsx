@@ -7,6 +7,8 @@ const Navbar = () => {
   const navLinks = [
     "Home",
     "About",
+    "Education",
+    "Experience",
     "Projects",
     "Skills",
     "Contact"

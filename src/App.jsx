@@ -6,6 +6,7 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Skills from './components/Skills'
 import Education from './components/Education'
+import Experience from './components/Experience'
 import './App.css'
 
 export default function App() {
@@ -16,6 +17,7 @@ export default function App() {
       <About />
       <Skills />
       <Education />
+      <Experience/>
       
       {/* Main content area */}
       <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">

@@ -59,7 +59,7 @@ const EducationCard = ({ level, institution, period, grades, details, icon, isLa
                 <h4 className="text-xl font-bold text-gray-900 dark:text-white">{level}</h4>
                 <p className="text-md font-medium text-gray-600 dark:text-gray-300 mt-1 mb-3">{institution}</p>
                 <p className="text-gray-700 dark:text-gray-200 mb-2">{grades}</p>
-                <p className="text-gray-500 dark:text-gray-400 leading-relaxed">{details}</p>
+                <p className="bg-gray-900 p-4 rounded-xl text-gray-500 dark:text-gray-400 text-left leading-relaxed">{details}</p>
             </div>
         </div>
     </div>

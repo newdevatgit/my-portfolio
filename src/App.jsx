@@ -7,6 +7,7 @@ import About from './components/About'
 import Skills from './components/Skills'
 import Education from './components/Education'
 import Experience from './components/Experience'
+import Projects from './components/Projects'
 import './App.css'
 
 export default function App() {
@@ -18,6 +19,7 @@ export default function App() {
       <Skills />
       <Education />
       <Experience/>
+      <Projects/>
       
       {/* Main content area */}
       <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">

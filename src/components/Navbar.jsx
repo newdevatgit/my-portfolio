@@ -7,10 +7,10 @@ const Navbar = () => {
   const navLinks = [
     "Home",
     "About",
+    "Skills",
     "Education",
     "Experience",
     "Projects",
-    "Skills",
     "Contact"
   ];
 

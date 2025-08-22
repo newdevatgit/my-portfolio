@@ -62,7 +62,7 @@ const Navbar = () => {
           {/* Logo/Brand Name */}
           <div className="flex-shrink-0">
              <a href="#home" className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-500">
-              MyPortfolio
+              ASP
             </a>
           </div>
 

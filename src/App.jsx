@@ -9,6 +9,7 @@ import Education from './components/Education'
 import Experience from './components/Experience'
 import Projects from './components/Projects'
 import Footer from './components/Footer'
+import Contact from './components/Contact'
 import './App.css'
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
       <Education />
       <Experience/>
       <Projects/>
+      <Contact />
       <Footer/>
     </>
   )

@@ -8,6 +8,7 @@ import Skills from './components/Skills'
 import Education from './components/Education'
 import Experience from './components/Experience'
 import Projects from './components/Projects'
+import Footer from './components/Footer'
 import './App.css'
 
 export default function App() {
@@ -20,18 +21,7 @@ export default function App() {
       <Education />
       <Experience/>
       <Projects/>
-      
-      {/* Main content area */}
-      <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-        
-        <main className="mt-8 text-center">
-          <h1 className="text-2xl font-bold">Welcome to My Portfolio</h1>
-          <p className="mt-4 text-gray-600">This is a simple portfolio built with React and Vite.</p>
-        </main>
-        <footer className="mt-8 text-gray-500">
-          <p>Made with ❤️ by Arvind Singh</p>
-        </footer>
-      </div>
+      <Footer/>
     </>
   )
 }

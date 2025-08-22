@@ -40,7 +40,7 @@ export default function Hero() {
         {/* Right Image */}
         <div className="flex-1 flex justify-center md:justify-end">
           <img
-            src="public/Profile-pic.jpeg"
+            src="/Profile-pic.jpeg"
             alt="Profile"
             className="rounded-full max-h-96 border-4 border-indigo-500 shadow-lg hover:scale-105 transition-transform duration-300"
           />

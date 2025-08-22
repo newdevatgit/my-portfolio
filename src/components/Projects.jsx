@@ -17,7 +17,7 @@ const projects = [
     {
       title: "Event Management UI",
       description: "A user-friendly Event Management UI built with React and Tailwind CSS for planning, organizing, and managing events.",
-      imageUrl: "src/assets/Home_page_EM.png",
+      imageUrl: "public/Home_page_EM.png",
       tags: ["React", "Tailwind CSS", "firebase"],
       githubUrl: "https://github.com/newdevatgit/event-management-ui",
       liveUrl: "https://neweventique.netlify.app/", 
@@ -25,7 +25,7 @@ const projects = [
     {
     title: "Intern Portal",
     description: "An Intern Portal project featuring login/signup, dashboard, leaderboard, and Firebase integration for intern management.",
-    imageUrl: "src/assets/Intern_portal_Dashboard.png",
+    imageUrl: "public/Intern_portal_Dashboard.png",
     tags: ["React", "Tailwind CSS","Firebase"],
     githubUrl: "https://github.com/newdevatgit/intern-portal",
     liveUrl: "https://intern-portal-five.vercel.app/", 
@@ -33,7 +33,7 @@ const projects = [
     {
       title: "Helpdesk App",
       description: "A Helpdesk web application designed to streamline customer support and issue tracking with a modern UI.",
-      imageUrl: "src/assets/Helpdesk.png",
+      imageUrl: "public/Helpdesk.png",
       tags: ["React", "Tailwind CSS"],
       githubUrl: "https://github.com/newdevatgit/helpdesk-app",
       liveUrl: "https://helpdesk-web.netlify.app/", 
@@ -41,7 +41,7 @@ const projects = [
   {
     title: "AAO",
     description: "Explore tutorials, productivity tools, learning platforms, and job boards — all in one sleek and responsive web app.",
-    imageUrl: "src/assets/AAO-home.png",
+    imageUrl: "public/AAO-home.png",
     tags: ["HTML", "CSS", "JavaScript"],
     githubUrl: "https://github.com/newdevatgit/AAO",
     liveUrl: "https://newdevatgit.github.io/AAO/", 
@@ -49,7 +49,7 @@ const projects = [
   {
     title: "Gradient Generator Tool",
     description: "A simple yet powerful Gradient Generator tool that helps users create and copy custom CSS gradients.",
-    imageUrl: "src/assets/gradient_Home-page.png",
+    imageUrl: "public/gradient_Home-page.png",
     tags: ["HTML", "CSS", "JavaScript"],
     githubUrl: "https://github.com/newdevatgit/Gradient-generator-tool",
     liveUrl: "https://newdevatgit.github.io/Gradient-generator-tool/", 

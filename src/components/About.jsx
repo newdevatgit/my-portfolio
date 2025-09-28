@@ -16,15 +16,15 @@ function About() {
   return (
     <section
       id="about"
-      className="py-24 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 min-h-screen"
+      className="py-24 bg-white dark:bg-gray-300 text-gray-800 dark:text-gray-100 min-h-80vh"
     >
       <div className="container mx-auto px-4">
         {/* Section Title */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-extrabold text-gray-900 dark:text-white sm:text-5xl">
+          <h2 className="text-4xl font-extrabold text-black sm:text-5xl">
             About Me
           </h2>
-          <p className="mt-4 text-lg leading-6 text-indigo-500 dark:text-indigo-400 font-semibold">
+          <p className="mt-4 text-lg leading-6 text-gray-600 font-semibold">
             A little bit about my journey
           </p>
         </div>
@@ -34,14 +34,14 @@ function About() {
 
           {/* Content Section */}
           <div className="max-w-2xl text-center lg:text-left">
-            <p className="text-lg mb-6 leading-relaxed text-gray-600 dark:text-gray-300">
-              I’m <span className="font-bold text-indigo-500 dark:text-indigo-400">Arvind Singh Panwar</span>,
-              a dedicated and passionate final year Computer Science student at <strong className="text-gray-900 dark:text-white">MITM college (RGPV University)</strong> with hands-on
+            <p className="text-lg mb-6 leading-relaxed text-gray-600">
+              I’m <span className="font-bold text-gray-900">Arvind Singh Panwar</span>,
+              a dedicated and passionate final year Computer Science student at <strong className="text-gray-900">MITM college (RGPV University)</strong> with hands-on
               experience in web development. I thrive on turning complex problems into beautiful, intuitive, and responsive web applications.
             </p>
             
-            <p className="text-lg mb-8 leading-relaxed text-gray-600 dark:text-gray-300">
-              My internship at <strong className="text-gray-900 dark:text-white">Paathshala EduCare</strong> sharpened my skills in building dynamic educational platforms with React.js and Vue.js. I enjoy collaborating with designers to create seamless and engaging user experiences.
+            <p className="text-lg mb-8 leading-relaxed text-gray-600">
+              My internship at <strong className="text-gray-900">Paathshala EduCare</strong> sharpened my skills in building dynamic educational platforms with React.js and Vue.js. I enjoy collaborating with designers to create seamless and engaging user experiences.
             </p>
 
             {/* Action Buttons */}

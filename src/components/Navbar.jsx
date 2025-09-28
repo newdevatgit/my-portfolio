@@ -9,13 +9,11 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
 
   const navLinks = [
-    "Home",
     "About",
     "Skills",
     "Education",
     "Experience",
     "Projects",
-    "Contact",
   ];
 
   // Effect to handle scroll events
@@ -28,13 +26,12 @@ const Navbar = () => {
         setScrolled(false);
       }
 
-      // Determine which section is in view and set the active link
-      let currentSection = "Home"; // Default to Home
+     
+      let currentSection = "Home"; 
       navLinks.forEach((link) => {
         const section = document.getElementById(link.toLowerCase());
         if (section) {
           const sectionTop = section.offsetTop;
-          // 150px offset to trigger the active state slightly before the section top hits the viewport top
           if (window.scrollY >= sectionTop - 150) {
             currentSection = link;
           }
@@ -56,18 +53,18 @@ const Navbar = () => {
 
 
   return (
-    <nav className={`fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl rounded-xl shadow-lg z-50 transition-all duration-300 ${scrolled ? 'bg-gray-900/95 backdrop-blur-md' : 'bg-gray-900/80 backdrop-blur-sm'}`}>
+    <nav className={`fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl rounded-xl z-50 transition-all duration-300 `}>
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo/Brand Name */}
           <div className="flex-shrink-0">
-             <a href="#home" className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-500">
+             <a href="#home" className="text-4xl font-bold text-black ">
               ASP
             </a>
           </div>
 
           {/* Desktop Navigation Links */}
-          <div className="hidden md:block">
+          <div className="hidden md:block bg-black rounded-full px-4 py-4">
             <ul className="ml-10 flex items-baseline space-x-4">
               {navLinks.map((link) => (
                 <li key={link}>
@@ -84,6 +81,10 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
+          </div>
+
+          <div className="hidden md:block">
+            <a href="#contact" className="bg-black rounded-full px-4 py-4 text-white text-sm font-medium">Get in touch </a>
           </div>
 
           {/* Mobile Menu Button */}

@@ -26,8 +26,8 @@ const Navbar = () => {
         setScrolled(false);
       }
 
-     
-      let currentSection = "Home"; 
+
+      let currentSection = "Home";
       navLinks.forEach((link) => {
         const section = document.getElementById(link.toLowerCase());
         if (section) {
@@ -53,28 +53,27 @@ const Navbar = () => {
 
 
   return (
-    <nav className={`fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl rounded-xl z-50 transition-all duration-300 `}>
-      <div className="mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className={`fixed top-4 left-1/2 -translate-x-1/2 w-[95%] md:bg-transparent bg-gray-300 max-w-7xl rounded-xl z-50 transition-all duration-300 `}>
+      <div className=" mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo/Brand Name */}
           <div className="flex-shrink-0">
-             <a href="#home" className="text-4xl font-bold text-black ">
+            <a href="#home" className="text-4xl font-bold text-gray-800 ">
               ASP
             </a>
           </div>
 
           {/* Desktop Navigation Links */}
-          <div className="hidden md:block bg-black rounded-full px-4 py-4">
+          <div className="hidden md:block bg-black shadow-xl rounded-full px-4 py-4">
             <ul className="ml-10 flex items-baseline space-x-4">
               {navLinks.map((link) => (
                 <li key={link}>
                   <a
                     href={`#${link.toLowerCase()}`}
-                    className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
-                      activeLink === link
+                    className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${activeLink === link
                         ? "bg-indigo-500 text-white shadow-lg"
                         : "text-gray-300 hover:bg-gray-700/50 hover:text-white"
-                    }`}
+                      }`}
                   >
                     {link}
                   </a>
@@ -84,7 +83,7 @@ const Navbar = () => {
           </div>
 
           <div className="hidden md:block">
-            <a href="#contact" className="bg-black rounded-full px-4 py-4 text-white text-sm font-medium">Get in touch </a>
+            <a href="#contact" className="bg-black rounded-full px-4 py-4 text-white shadow-xl text-sm font-medium">Get in touch </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -135,24 +134,34 @@ const Navbar = () => {
 
       {/* Mobile Menu Panel */}
       {isOpen && (
-        <div className="md:hidden" id="mobile-menu">
-          <ul className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            {navLinks.map((link) => (
-              <li key={link}>
+        <div className="md:hidden px-4 pt-4 pb-6">
+          <div className="bg-black shadow-xl rounded-2xl px-4 py-4">
+            <ul className="flex flex-col space-y-3">
+              {navLinks.map((link) => (
+                <li key={link}>
+                  <a
+                    href={`#${link.toLowerCase()}`}
+                    className={`block px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${activeLink === link
+                        ? "bg-indigo-500 text-white shadow-lg"
+                        : "text-gray-300 hover:bg-gray-700/50 hover:text-white"
+                      }`}
+                    onClick={() => setIsOpen(false)} // Close menu on click
+                  >
+                    {link}
+                  </a>
+                </li>
+              ))}
+              <li>
                 <a
-                  href={`#${link.toLowerCase()}`}
-                  className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
-                    activeLink === link
-                      ? "bg-indigo-500 text-white"
-                      : "text-gray-300 hover:bg-gray-700 hover:text-white"
-                  }`}
-                  onClick={() => setIsOpen(false)} 
+                  href="#contact"
+                  className="block px-4 py-2 rounded-full text-sm font-medium bg-indigo-600 text-white shadow-lg hover:bg-indigo-500 transition-all duration-300"
+                  onClick={() => setIsOpen(false)}
                 >
-                  {link}
+                  Get in touch
                 </a>
               </li>
-            ))}
-          </ul>
+            </ul>
+          </div>
         </div>
       )}
     </nav>

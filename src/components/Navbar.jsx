@@ -53,7 +53,7 @@ const Navbar = () => {
 
 
   return (
-    <nav className={`fixed top-4 left-1/2 -translate-x-1/2 w-[95%] md:bg-transparent bg-gray-300 max-w-7xl rounded-xl z-50 transition-all duration-300 `}>
+    <nav className={`fixed left-1/2 -translate-x-1/2 bg-gray-400 w-full md:bg-transparent max-w-7xl z-50 transition-all duration-300 `}>
       <div className=" mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo/Brand Name */}
@@ -91,7 +91,7 @@ const Navbar = () => {
             <button
               onClick={() => setIsOpen(!isOpen)}
               type="button"
-              className="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+              className="bg-gray-800 inline-flex items-center justify-center p-2 rounded-3xl text-gray-400 hover:text-white hover:bg-gray-700 "
               aria-controls="mobile-menu"
               aria-expanded="false"
             >

@@ -44,22 +44,36 @@ const educationHistory = [
 
 const EducationCard = ({ level, institution, period, grades, details, icon, isLast }) => (
     <div className="relative flex items-start">
-        {/* Timeline Line */}
+        {/* Timeline Line (Indigo accent kept) */}
         {!isLast && <div className="absolute left-6 top-8 w-0.5 h-full bg-indigo-300 dark:bg-indigo-700"></div>}
         
-        {/* Timeline Icon */}
-        <div className="flex-shrink-0 w-12 h-12 bg-indigo-500 dark:bg-indigo-600 text-white rounded-full flex items-center justify-center z-10">
+        {/* Timeline Icon (Indigo accent kept) */}
+        <div className="flex-shrink-0 w-12 h-12 bg-indigo-500 dark:bg-indigo-600 text-white rounded-full flex items-center justify-center z-10 shadow-lg">
             {icon}
         </div>
         
         {/* Card Content */}
         <div className="ml-6 flex-1">
-            <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700">
-                <p className="text-sm font-semibold text-indigo-500 dark:text-indigo-400 mb-1">{period}</p>
-                <h4 className="text-xl font-bold text-gray-900 dark:text-white">{level}</h4>
-                <p className="text-md font-medium text-gray-600 dark:text-gray-300 mt-1 mb-3">{institution}</p>
-                <p className="text-gray-700 dark:text-gray-200 mb-2">{grades}</p>
-                <p className="bg-gray-900 p-4 rounded-xl text-gray-500 dark:text-gray-400 text-left leading-relaxed">{details}</p>
+            <div 
+              // Updated card background and border to match Skills card design
+              className="bg-white dark:bg-gray-200 p-6 rounded-2xl shadow-xl border border-indigo-100 dark:border-indigo-400 hover:shadow-2xl transition-shadow duration-300"
+            >
+                {/* Period - Indigo accent kept for timeline feeling */}
+                <p className="text-sm font-semibold text-indigo-500 dark:text-indigo-600 mb-1">{period}</p>
+                
+                {/* Level - Text color adjusted for better contrast on the card background */}
+                <h4 className="text-xl font-bold text-black dark:text-gray-900">{level}</h4>
+                
+                {/* Institution - Supporting text color adjusted */}
+                <p className="text-md font-medium text-gray-600 dark:text-gray-600 mt-1 mb-3">{institution}</p>
+                
+                {/* Grades - Supporting text color adjusted */}
+                <p className="text-gray-700 dark:text-gray-700 mb-2">{grades}</p>
+                
+                {/* Details box - background changed for contrast against the card in both modes */}
+                <p className="bg-gray-50 dark:bg-gray-300 p-4 rounded-xl text-gray-500 dark:text-gray-700 text-left leading-relaxed">
+                  {details}
+                </p>
             </div>
         </div>
     </div>
@@ -68,14 +82,17 @@ const EducationCard = ({ level, institution, period, grades, details, icon, isLa
 
 export default function Education() {
   return (
-    <section id="education" className="py-24 bg-gray-50 dark:bg-gray-900">
-      <div className="container mx-auto px-4">
+    // Updated section background and primary text colors
+    <section id="education" className="py-20 bg-white dark:bg-gray-300 text-gray-800 dark:text-gray-100">
+      <div className="container mx-auto px-4 max-w-7xl">
         {/* Section Title */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-extrabold text-gray-900 dark:text-white sm:text-5xl">
+        <div className="text-center mb-12">
+          {/* Updated title color */}
+          <h2 className="text-4xl font-extrabold text-black sm:text-5xl">
             My Education
           </h2>
-          <p className="mt-4 text-lg leading-6 text-indigo-500 dark:text-indigo-400 font-semibold">
+          {/* Updated subtitle color to match Skills section supporting text */}
+          <p className="mt-4 text-xl leading-8 text-gray-600 dark:text-gray-500 font-medium">
             My academic journey
           </p>
         </div>

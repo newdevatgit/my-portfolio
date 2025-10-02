@@ -5,7 +5,16 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'cursive': ['Dancing Script', 'Great Vibes', 'cursive'],
+        'elegant': ['Tangerine', 'Pinyon Script', 'cursive'],
+        'handwriting': ['Caveat', 'Kalam', 'cursive'],
+        'title': ['Playfair Display', 'Cinzel', 'serif'],
+        'fancy': ['Pacifico', 'Lobster', 'cursive'],
+        'modern': ['Abril Fatface', 'Righteous', 'display']
+      }
+    },
   },
   plugins: [],
 }

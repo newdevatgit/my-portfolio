@@ -50,7 +50,7 @@ const SkillCard = ({ name, icon }) => (
 export default function Skills() {
   return (
  
-    <section id="skills" className="py-20 bg-white dark:bg-gray-300 text-gray-800 dark:text-gray-100">
+    <section id="skills" className="py-10 bg-white dark:bg-gray-300 text-gray-800 dark:text-gray-100 lg:p-6">
       <div className="container mx-auto px-4 max-w-7xl">
         {/* Section Title */}
         <div className="text-center font-title mb-12">
@@ -63,7 +63,7 @@ export default function Skills() {
         </div>
 
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 font-reading">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-6 font-reading">
           {skillCategories.map((category) => (
             <div 
               key={category.title} 

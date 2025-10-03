@@ -12,7 +12,12 @@ export default {
         'handwriting': ['Caveat', 'Kalam', 'cursive'],
         'title': ['Playfair Display', 'Cinzel', 'serif'],
         'fancy': ['Pacifico', 'Lobster', 'cursive'],
-        'modern': ['Abril Fatface', 'Righteous', 'display']
+        'modern': ['Abril Fatface', 'Righteous', 'display'],
+        // New font families for paragraphs
+        'body': ['Open Sans', 'Roboto', 'sans-serif'],
+        'reading': ['Lora', 'Merriweather', 'serif'],
+        'content': ['Source Sans Pro', 'Nunito', 'sans-serif'],
+        'clean': ['Inter', 'system-ui', 'sans-serif']
       }
     },
   },

@@ -104,7 +104,7 @@ export default function Projects() {
   return (
     <section id="projects" className="py-10 bg-white dark:bg-gray-300 text-gray-800 dark:text-gray-100">
       <div className="container mx-auto px-4 max-w-7xl">
-        <div className="text-center mb-12">
+        <div className="text-center font-title mb-12">
           <h2 className="text-4xl font-extrabold text-black sm:text-5xl">
             My Projects
           </h2>
@@ -113,7 +113,7 @@ export default function Projects() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 font-reading lg:grid-cols-3 gap-8">
             {projects.map(project => (
                 <ProjectCard key={project.title} {...project} />
             ))}

@@ -48,7 +48,7 @@ const Navbar = () => {
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-black shadow-xl' : 'bg-transparent'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center my-2 justify-between h-15">
+        <div className="flex items-center my-2 justify-between h-15 font-reading">
           
           <div className="flex-shrink-0">
             <a href="/" className={`text-3xl font-bold font-cursive transition-colors duration-300 ${scrolled || isOpen ? 'text-white' : 'text-gray-800'}`}>
@@ -139,7 +139,7 @@ const Navbar = () => {
             </svg>
           </button>
           
-          <div className="w-full max-w-md mx-auto p-8 rounded-lg">
+          <div className="w-full max-w-md mx-auto p-8 rounded-lg font-reading">
             <ul className="flex flex-col space-y-8 text-center">
               {navLinks.map((link) => (
                 <li key={link}>

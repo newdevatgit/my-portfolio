@@ -70,7 +70,7 @@ export default function Experience() {
     <section id="experience" className="py-10 bg-white dark:bg-gray-300 text-gray-800 dark:text-gray-100">
       <div className="container mx-auto px-4 max-w-7xl">
         {/* Section Title */}
-        <div className="text-center mb-12">
+        <div className="text-center font-title mb-12">
           <h2 className="text-4xl font-extrabold text-black sm:text-5xl">
             Work Experience
           </h2>
@@ -79,7 +79,7 @@ export default function Experience() {
           </p>
         </div>
 
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-3xl font-reading mx-auto">
             <div className="space-y-12">
                 {experienceData.map((exp, index) => (
                     <ExperienceCard 

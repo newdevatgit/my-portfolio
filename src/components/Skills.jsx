@@ -53,7 +53,7 @@ export default function Skills() {
     <section id="skills" className="py-20 bg-white dark:bg-gray-300 text-gray-800 dark:text-gray-100">
       <div className="container mx-auto px-4 max-w-7xl">
         {/* Section Title */}
-        <div className="text-center mb-12">
+        <div className="text-center font-title mb-12">
           <h2 className="text-4xl font-extrabold text-black sm:text-5xl">
             My Technical Skills
           </h2>
@@ -63,7 +63,7 @@ export default function Skills() {
         </div>
 
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 font-reading">
           {skillCategories.map((category) => (
             <div 
               key={category.title} 

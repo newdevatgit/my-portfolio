@@ -16,11 +16,11 @@ function About() {
   return (
     <section
       id="about"
-      className="py-24 bg-white dark:bg-gray-300 text-gray-800 dark:text-gray-100 min-h-80vh"
+      className="py-10 bg-white dark:bg-gray-300 text-gray-800 dark:text-gray-100 min-h-80vh"
     >
       <div className="container mx-auto px-4">
         {/* Section Title */}
-        <div className="text-center mb-12">
+        <div className="text-center font-title mb-12">
           <h2 className="text-4xl font-extrabold text-black sm:text-5xl">
             About Me
           </h2>
@@ -33,7 +33,7 @@ function About() {
           
 
           {/* Content Section */}
-          <div className="max-w-2xl text-center lg:text-left">
+          <div className="max-w-2xl text-center font-reading lg:text-left">
             <p className="text-lg mb-6 leading-relaxed text-gray-600">
               I’m <span className="font-bold text-gray-900">Arvind Singh Panwar</span>,
               a dedicated and passionate final year Computer Science student at <strong className="text-gray-900">MITM college (RGPV University)</strong> with hands-on

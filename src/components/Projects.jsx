@@ -110,7 +110,7 @@ const ProjectCard = ({ title, description, imageUrl, tags, githubUrl, liveUrl })
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-10 bg-gray-300 p-6 text-gray-800">
+    <section id="projects" className="py-10 bg-gray-300 lg:p-6 text-gray-800">
       <div className="container mx-auto px-4 max-w-7xl">
         <div className="text-center font-title mb-12">
           <h2 className="text-4xl font-extrabold text-black sm:text-5xl">

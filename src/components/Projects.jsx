@@ -56,7 +56,7 @@ const projects = [
     imageUrl: "/gradient_Home-page.png",
     tags: ["HTML", "CSS", "JavaScript"],
     githubUrl: "https://github.com/newdevatgit/Gradient-generator-tool",
-    liveUrl: "https://newdevatgit.github.io/AAO/", 
+    liveUrl: "https://newdevatgit.github.io/Gradient-generator-tool/", 
   },
 ];
 

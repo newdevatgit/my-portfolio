@@ -65,7 +65,7 @@ function About() {
                 GitHub
               </a>
               <a
-                href="/Arvind_singh_Panwar_Resume.pdf"
+                href="public/Arvind-Singh-Panwar-cv.pdf"
                 download
                 className="inline-flex items-center gap-2 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 font-semibold px-6 py-3 rounded-lg shadow-lg transform hover:-translate-y-1 transition-all duration-300"
               >

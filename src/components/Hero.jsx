@@ -42,7 +42,7 @@ export default function Hero() {
           <img
             src="/Profile-pic.jpeg"
             alt="Profile"
-            className="rounded-full max-h-96 shadow-xl hover:scale-105 transition-transform duration-300"
+            className="rounded-full max-h-96 shadow-xl border border-black hover:scale-105 transition-transform duration-300"
           />
         </div>
       </div>
